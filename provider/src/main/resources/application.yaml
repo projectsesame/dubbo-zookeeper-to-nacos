@@ -1,0 +1,10 @@
+server:
+  port: 8086
+
+dubbo:
+  application:
+    name:  ${APP_NAME:provider-demo}
+  registry:
+#    address: ${REG_ADDRESS:zookeeper://127.0.0.1:2181}
+    address: ${REG_ADDRESS:nacos://10.6.176.110:30544}
+

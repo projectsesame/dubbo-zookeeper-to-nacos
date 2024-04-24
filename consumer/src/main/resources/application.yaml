@@ -1,0 +1,10 @@
+server:
+  port: 8085
+
+dubbo:
+  application:
+    name:  ${APP_NAME:consumer-demo}
+    qos-enable: false
+  registry:
+#    address: ${REG_ADDRESS:zookeeper://127.0.0.1:2181}
+    address: ${REG_ADDRESS:nacos://10.6.176.110:30544}
